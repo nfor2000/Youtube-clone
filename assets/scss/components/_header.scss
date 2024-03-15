@@ -1,0 +1,168 @@
+@use '../util' as *;
+
+header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 99;
+     width: 100%;
+     background-color: var(--bg-primary);
+
+     section.header-section {
+          padding: 10px 20px;
+          display: flex;
+          justify-content: space-between;
+     }
+
+     span.material-symbols-outlined {
+          font-size: 28px;
+     }
+}
+
+.logo-wrapper {
+     gap: 5px;
+}
+
+.logo {
+     display: flex;
+     align-items: center;
+     font-size: 18px;
+     font-weight: 700;
+
+     img {
+          width: 30px;
+     }
+
+}
+
+.form-wrapper {
+     display: none;
+     @include breakpoint(large){
+          display: flex;
+          width: 40em;
+     }
+}
+
+
+.search_form {
+     display: flex;
+     width: 100%;
+     border: 1px solid #dfdfdf;
+     border-radius: 30px;
+     flex-direction: row-reverse;
+     height: 40px;
+}
+
+.search_form {
+     input {
+          flex: 1;
+          padding-inline-start: 20px;
+     }
+
+     label {
+          text-indent: -9999px;
+     }
+
+     button {
+          background-color: var(--bg-1);
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px;
+          width: 10%;
+
+          svg {
+               width: 24px;
+               height: 24px;
+          }
+     }
+}
+
+.mic {
+     padding:8px 10px;
+     background-color: var(--bg-1);
+     border-radius: 50%;
+}
+
+.wrapper-icon {
+     justify-content: end;
+     gap: 12px;
+
+     @include breakpoint(medium){
+          gap: 20px;
+     }
+     .search-icon{
+          @include breakpoint(large){
+               display: none;
+          }
+     }
+}
+
+.notif {
+     position: relative;
+}
+
+.notif::before {
+     content: '9+';
+     position: absolute;
+     display: block;
+     width: max-content;
+     padding:0 4px;
+     color: white;
+     background-color: red;
+     border-radius: 5px;
+     right: 0;
+     top: -5px;
+     transform: translateX(50%);
+     font-weight: 600;
+}
+
+.profile {
+     background-color: tomato;
+     color: #fff;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     line-height: 30px;
+     text-align: center;
+}
+
+.filters {
+     position: relative;
+     display: flex;
+     gap: 10px;
+     margin-block: 10px;
+     justify-content: left;
+     padding-inline: 20px;
+     white-space: nowrap;
+     overflow: hidden;
+}
+
+
+.filters::after {
+     content: "";
+     position: absolute;
+     display: block;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     width: 40px;
+     background: linear-gradient(to left, var(--bg-primary) 70%, transparent);
+
+     @include breakpoint(medium) {
+          display: block;
+     }
+}
+
+.filter-btn.active {
+     color:  var(--bg-primary);
+     background-color: var(--text-color);
+}
+
+.filter-btn {
+     width: max-content;
+     background-color: var(--bg-1);
+     color: var(--text-color);
+     font-size: 14px;
+     padding: 10px;
+     border-radius: 10px;
+     font-weight: 600;
+}

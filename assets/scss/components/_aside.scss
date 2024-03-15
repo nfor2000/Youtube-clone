@@ -1,0 +1,59 @@
+@use '../util' as *;
+
+
+
+
+
+
+aside {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100vh;
+     z-index: 99;
+     transform: translateX(-100%);
+     width: 280px;
+     transition: .2s linear;
+
+     @include breakpoint(large) {
+          top: rem(81);
+          width: 100px;
+          transform: translateX(0);
+     }
+
+}
+
+
+.icons-menu {
+     display: none;
+     width: 100%;
+
+     @include breakpoint(large) {
+          display: block;
+     }
+
+     ul {
+          li {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               margin-bottom: 20px;
+
+               a {
+                    color: var(--text-color);
+                    font-size: 12px;
+               }
+          }
+     }
+}
+
+body.toggle-side-nav {
+     
+     aside {
+          @include breakpoint(large) {
+               z-index: 99;
+          }
+          
+     }
+     
+}

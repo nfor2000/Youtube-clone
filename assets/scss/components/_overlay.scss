@@ -1,0 +1,24 @@
+
+@use '../util' as *;
+
+.overlay {
+     position: fixed;
+     left: 0;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     background-color: #00000076;
+     display: none;
+     z-index: 977;
+}
+
+body.toggle-side-nav {
+
+     .overlay {
+          display: block;
+          @include breakpoint(xlarge)  {
+              display: none;
+          }
+
+     }
+}

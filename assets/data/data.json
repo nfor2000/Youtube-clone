@@ -1,0 +1,78 @@
+{ "contents": [
+     {
+          "title": "Learn yoga from the best",
+          "thumbnail": "assets/images/p1.jpg",
+          "youtuber": "Jack Smith",
+          "youtuberImg": "assets/images/Jack.png",
+          "views": 319000,
+          "duration":"1:0:14"
+     },
+     {
+          "title": "Visit the most exotic",
+          "thumbnail": "assets/images/thumbnail1.png",
+          "youtuber": "megan scarlette",
+          "youtuberImg": "assets/images/megan.png",
+          "views": 919000,
+          "duration": "43:09"
+     },
+
+     {
+          "title": "The US bicycle trip",
+          "thumbnail": "assets/images/thumbnail2.png",
+          "youtuber": "cameron boce",
+          "youtuberImg": "assets/images/cameron.png",
+          "views": 1000000,
+          "duration": "1:35:03"
+     },
+
+     {
+          "title": "How to move on escalator",
+          "thumbnail": "assets/images/thumbnail3.png",
+          "youtuber": "Tom pitt",
+          "youtuberImg": "assets/images/tom.png",
+          "views": 19000,
+          "duration":"6:14"
+     },
+     {
+          "title": "Where you have never been before",
+          "thumbnail": "assets/images/thumbnail4.png",
+          "youtuber": "Gerard Smith",
+          "youtuberImg": "assets/images/gerard.png",
+          "views": 5000000,
+          "duration": "23:09"
+     },
+
+     {
+          "title": "The new fashion at LA",
+          "thumbnail": "assets/images/thumbnail5.png",
+          "youtuber": "Simon Pierre",
+          "youtuberImg": "assets/images/simon.png",
+          "views": 60000,
+          "duration": "35:03"
+     },
+     {
+          "title": "Buy a new lamborghini",
+          "thumbnail": "assets/images/thumbnail6.png",
+          "youtuber": "Gerard Smith",
+          "youtuberImg": "assets/images/gerard.png",
+          "views": 800000,
+          "duration": "7:14"
+     },
+     {
+          "title": "looking for a job",
+          "thumbnail": "assets/images/thumbnail7.png",
+          "youtuber": "Jack Harlow",
+          "youtuberImg": "assets/images/Jack.png",
+          "views": 10000,
+          "duration": "5:62"
+     },
+
+     {
+          "title": "Lamborghini for you",
+          "thumbnail": "assets/images/thumbnail8.png",
+          "youtuber": "Tom Lamborghini",
+          "youtuberImg": "assets/images/tom.png",
+          "views": 6000000,
+          "duration": "11:14"
+     }
+]}

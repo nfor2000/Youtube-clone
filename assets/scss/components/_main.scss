@@ -1,0 +1,31 @@
+
+@use '../util' as *;
+
+
+main {
+     margin-top: 128px;
+     margin-bottom: 40px;
+     transition: .2s linear;
+     @include breakpoint(large) {
+          margin-top: 138px;
+     }
+}
+
+.grid-container {
+     display: grid;
+     gap: rem(10);
+}
+
+.grid-container {
+     @include breakpoint(medium){
+          grid-template-columns: repeat(2, 1fr) ;
+     }
+
+     @include breakpoint(large) {
+          grid-template-columns: repeat(3, 1fr);
+     }
+
+     @include breakpoint(xlarge) {
+          grid-template-columns: repeat(auto-fit,minmax(320px,1fr));;
+     }
+}

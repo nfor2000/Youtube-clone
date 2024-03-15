@@ -1,0 +1,17 @@
+{
+  "name": "youtubeclone",
+  "version": "1.0.0",
+  "description": "clone youtube",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass ./assets/scss:./assets/dist --watch"
+  },
+  "author": "Presly",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.18"
+  },
+  "devDependencies": {
+    "sass": "^1.71.1"
+  }
+}

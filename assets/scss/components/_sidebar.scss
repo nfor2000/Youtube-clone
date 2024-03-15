@@ -1,0 +1,116 @@
+@use '../util' as *;
+
+.sideBar {
+     position: fixed;
+     padding:10px 20px;
+     left: 0;
+     top: 0;
+     width: 280px;
+     background-color: var(--bg-primary);
+     overflow-y: scroll;
+     transform: translateX(-100%);
+     z-index: 999;
+     transition: 0.2s linear;
+     height: 100vh;
+     scroll-behavior: smooth;
+
+     @include breakpoint(xlarge)  {
+          width: 13%;
+          transform: translateX(0);
+          padding-right: 0;
+          top: rem(71);
+          height: calc(100vh - 71px);
+          .wrapper{
+               display: none;
+          }
+     }
+
+     .wrapper {
+          padding-block: 10px;
+     }
+
+     ul {
+          margin-bottom: 20px;
+
+          h3 {
+               display: flex;
+               align-items: center;
+               padding: 10px;
+               margin-top: 10px;
+               font-weight: 500;
+          }
+
+          .nav-item {
+               display: flex;
+               justify-content: left;
+               align-items: center;
+               gap: 20px;
+               padding:8px 10px;
+               font-size: 14px;
+
+               .nav-link {
+                    color: var(--text-color);
+               }
+          }
+
+          .nav-item.active {
+               background-color: var(--bg-1);
+               border-radius: 10px;
+
+               .nav-link {
+                    font-weight: 600;
+               }
+
+          }
+     }
+}
+
+
+.subscription {
+     li {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img{
+               width: 30px;
+               height: 30px;
+               border-radius: 50%;
+          }
+
+          p{
+               font-size: 14px;
+          }
+     }
+}
+
+
+.explore-menu{
+     li {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          padding:8px 10px;
+     }
+}
+
+
+body.toggle-side-nav {
+
+     .sideBar{
+          transform: translateX(0);
+          @include breakpoint(xlarge)  {
+               transform: translateX(-100%);
+          }
+     }
+
+}
+
+
+.sideBar::-webkit-scrollbar {
+     width: 0;
+}
+
+.sideBar::-webkit-scrollbar-thumb {
+     background-color: transparent;
+}
